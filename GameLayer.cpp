@@ -1,3 +1,5 @@
+
+//在分支下进行了修改
 #include "GameLayer.h"
 #include "FloatWord.h"
 #include "GameData.h"
@@ -124,9 +126,9 @@ void GameLayer::gotoNextLevel(){
 }
 
 void GameLayer::gotoGameOver(){
-	//������߷�?
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß·ï¿?
 	GAMEDATA::getInstance()->saveHighestScore();
-	//Ʈ�֣��л�scene
+	//Æ®ï¿½Ö£ï¿½ï¿½Ð»ï¿½scene
 	Size visibleSize = Director::getInstance()->getVisibleSize();
 	FloatWord* gameOver = FloatWord::create(
 		"GAME OVER",80,Point(visibleSize.width,visibleSize.height/2));
